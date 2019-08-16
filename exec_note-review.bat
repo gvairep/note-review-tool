@@ -2,19 +2,19 @@
 
 cd %~dp0
 
-rem ƒŒƒrƒ…[—pURL
-set /P USR_INPUT_STR="ƒŒƒrƒ…[—pURL‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢: "
+rem ãƒ¬ãƒ“ãƒ¥ãƒ¼ç”¨URL
+set /P USR_INPUT_STR="ãƒ¬ãƒ“ãƒ¥ãƒ¼ç”¨URLã‚’å…¥åŠ›ã—ã¦ãã ã•ã„: "
 
-echo ƒoƒbƒ`ƒtƒ@ƒCƒ‹‚ðŽÀs‚µ‚Ü‚·B
+echo ãƒãƒƒãƒãƒ•ã‚¡ã‚¤ãƒ«ã‚’å®Ÿè¡Œã—ã¾ã™ã€‚
 python note-review.py %USR_INPUT_STR%
 
 if %ERRORLEVEL% NEQ 0 goto error_handler
 
-echo review.html‚ªo—Í‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+echo review.htmlã®å‡ºåŠ›ãŒå®Œäº†ã—ã¾ã—ãŸã€‚
 goto exit_handler
 
 :error_handler
-echo review.html‚ªo—Í‚ÉŽ¸”s‚µ‚Ü‚µ‚½B
+echo review.htmlã®å‡ºåŠ›ã«å¤±æ•—ã—ã¾ã—ãŸã€‚
 rem pause
 
 :exit_handler
