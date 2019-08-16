@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<title>note-review-tool</title>
+<style type="text/css">
+<!--
+#site-title {
+  text-align : center;
+  font-size : 50px;
+}
+-->
+</style>
+<body>
+<h1 id="site-title">note review tool!</h1>
+<textarea name="editor" id="editor">
+</textarea>
+<form id="load-form">
+  <p>noteのデータを選択してください。</p><input type="file" name="data"><br><br />
+</form>
+<script src="https://cdn.ckeditor.com/4.12.1/standard/ckeditor.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script>
+  CKEDITOR.replace( 'editor', { height: 700, width: 1200 } );
+  CKEDITOR.editorConfig = function( config ) {
+    config.language = 'ja';
+  };
+</script>
+<script>
+  $("#load-form [name=data]")[0].addEventListener("change", function (e) {
+    var file = e.target.files[0];
+    var reader = new FileReader();
+
+    reader.readAsText(file);
+
+    reader.onload = function(){
+      var data = reader.result
+      CKEDITOR.instances.editor.setData(data);
+    };
+  });
+</script>
+</body>
+</html>
