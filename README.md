@@ -1,55 +1,55 @@
-# note review tool‚Æ‚Í
+# note review toolã¨ã¯
 
-note review tool‚Æ‚ÍAˆÈ‰ºWebƒT[ƒrƒXunotev‚Ì“Še‹LŽ–‚ÌƒŒƒrƒ…[Žx‰‡ƒc[ƒ‹‚Å‚·B
+note review toolã¨ã¯ã€ä»¥ä¸‹Webã‚µãƒ¼ãƒ“ã‚¹ã€Œnoteã€ã®æŠ•ç¨¿è¨˜äº‹ã®ãƒ¬ãƒ“ãƒ¥ãƒ¼æ”¯æ´ãƒ„ãƒ¼ãƒ«ã§ã™ã€‚
 
 https://note.mu/
 
-# 1. ‘O’ñðŒ
+## 1. å‰ææ¡ä»¶
 
-OS‚ÍWindows10‚Å“®ìŠm”FÏ‚Ý‚Å‚·B
+OSã¯Windows10ã§å‹•ä½œç¢ºèªæ¸ˆã¿ã§ã™ã€‚
 
-ƒc[ƒ‹‚ÌŽÀs‚É‚ÍPython3.7ˆÈã‚ª•K—v‚Æ‚È‚è‚Ü‚·B
+ãƒ„ãƒ¼ãƒ«ã®å®Ÿè¡Œã«ã¯Python3.7ä»¥ä¸ŠãŒå¿…è¦ã¨ãªã‚Šã¾ã™ã€‚
 
-‚Ü‚½APython‚ÌˆÈ‰ºƒ‰ƒCƒuƒ‰ƒŠ‚ªƒCƒ“ƒXƒg[ƒ‹‚³‚ê‚Ä‚¢‚é•K—v‚ª‚ ‚è‚Ü‚·B
+ã¾ãŸã€Pythonã®ä»¥ä¸‹ãƒ©ã‚¤ãƒ–ãƒ©ãƒªãŒã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã•ã‚Œã¦ã„ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚
 
-EBeautifulSoup4
+ãƒ»BeautifulSoup4
 
-# 2. Žg‚¢•û
+## 2. ä½¿ã„æ–¹
 
-## 2.1 ƒŒƒrƒ…[—pHTML‚ðì¬‚·‚éByƒŒƒrƒ…[ƒAz
+### 2.1 ãƒ¬ãƒ“ãƒ¥ãƒ¼ç”¨HTMLã‚’ä½œæˆã™ã‚‹ã€‚ã€ãƒ¬ãƒ“ãƒ¥ãƒ¼ã‚¢ã€‘
 
-ƒRƒ}ƒ“ƒhƒvƒƒ“ƒvƒg‚ðŠJ‚«AˆÈ‰º‚ÌƒRƒ}ƒ“ƒh‚ÅƒŒƒrƒ…[—pHTML‚ðì¬‚µ‚Ü‚·B
+ã‚³ãƒžãƒ³ãƒ‰ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã‚’é–‹ãã€ä»¥ä¸‹ã®ã‚³ãƒžãƒ³ãƒ‰ã§ãƒ¬ãƒ“ãƒ¥ãƒ¼ç”¨HTMLã‚’ä½œæˆã—ã¾ã™ã€‚
 
-python note-review.py <note‚Ì‹¤—L—pƒŠƒ“ƒN‚ÌURL>
+python note-review.py <noteã®å…±æœ‰ç”¨ãƒªãƒ³ã‚¯ã®URL>
 
-ƒŒƒrƒ…[—pHTML‚Æ‚µ‚ÄˆÈ‰ºHTMLƒtƒ@ƒCƒ‹‚ªì¬‚³‚ê‚Ü‚·B
+ãƒ¬ãƒ“ãƒ¥ãƒ¼ç”¨HTMLã¨ã—ã¦ä»¥ä¸‹HTMLãƒ•ã‚¡ã‚¤ãƒ«ãŒä½œæˆã•ã‚Œã¾ã™ã€‚
 
 review.html
 
-## 2.2 ƒŒƒrƒ…[‚·‚éByƒŒƒrƒ…[ƒAz
+### 2.2 ãƒ¬ãƒ“ãƒ¥ãƒ¼ã™ã‚‹ã€‚ã€ãƒ¬ãƒ“ãƒ¥ãƒ¼ã‚¢ã€‘
 
-review.html‚ðŠJ‚«AƒŒƒrƒ…[‚ðs‚¢‚Ü‚·B
-review.htmlã‚Å‚ÍŽ©—R‚É•ÒW‚ðs‚¤‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+review.htmlã‚’é–‹ãã€ãƒ¬ãƒ“ãƒ¥ãƒ¼ã‚’è¡Œã„ã¾ã™ã€‚
+review.htmlä¸Šã§ã¯è‡ªç”±ã«ç·¨é›†ã‚’è¡Œã†ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-## 2.2 ƒŒƒrƒ…[Œ‹‰Ê‚ð•Û‘¶‚·‚éByƒŒƒrƒ…[ƒAz
+### 2.2 ãƒ¬ãƒ“ãƒ¥ãƒ¼çµæžœã‚’ä¿å­˜ã™ã‚‹ã€‚ã€ãƒ¬ãƒ“ãƒ¥ãƒ¼ã‚¢ã€‘
 
-review.html‚Ì‰º•”‚É‚ ‚éu•Û‘¶v‚ð‰Ÿ‚µ‚Ü‚·B
-data.txt‚Æ‚¢‚¤ƒtƒ@ƒCƒ‹‚Ìƒ_ƒEƒ“ƒ[ƒh‚ªŽn‚Ü‚è‚Ü‚·B
-data.txt‚É‚ÍƒŒƒrƒ…[Œ‹‰Ê‚ª‹LÚ‚³‚ê‚Ä‚¢‚Ü‚·B
+review.htmlã®ä¸‹éƒ¨ã«ã‚ã‚‹ã€Œä¿å­˜ã€ã‚’æŠ¼ã—ã¾ã™ã€‚
+data.txtã¨ã„ã†ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ãŒå§‹ã¾ã‚Šã¾ã™ã€‚
+data.txtã«ã¯ãƒ¬ãƒ“ãƒ¥ãƒ¼çµæžœãŒè¨˜è¼‰ã•ã‚Œã¦ã„ã¾ã™ã€‚
 
-## 2.3 ƒŒƒrƒ…[Œ‹‰Ê‚ð‹¤—L‚·‚éByƒŒƒrƒ…[ƒAz
+### 2.3 ãƒ¬ãƒ“ãƒ¥ãƒ¼çµæžœã‚’å…±æœ‰ã™ã‚‹ã€‚ã€ãƒ¬ãƒ“ãƒ¥ãƒ¼ã‚¢ã€‘
 
-data.txt‚ðnote“ŠeŽÒ‚É‘—•tE‹¤—L‚µ‚Ü‚·B
+data.txtã‚’noteæŠ•ç¨¿è€…ã«é€ä»˜ãƒ»å…±æœ‰ã—ã¾ã™ã€‚
 
-## 2.4 ƒŒƒrƒ…[Œ‹‰Ê‚ðŒ©‚éByƒŒƒrƒ…[ƒCz
+### 2.4 ãƒ¬ãƒ“ãƒ¥ãƒ¼çµæžœã‚’è¦‹ã‚‹ã€‚ã€ãƒ¬ãƒ“ãƒ¥ãƒ¼ã‚¤ã€‘
 
-load.html‚Æ‚¢‚¤ƒtƒ@ƒCƒ‹ŠJ‚«‚Ü‚·B
-load.html‚Ì‰º•”‚É‚ ‚éunote‚Ìƒf[ƒ^‚ð‘I‘ð‚µ‚Ä‚­‚¾‚³‚¢Bv‚Æ‚¢‚¤‚Æ‚±‚ë‚ÅA
-‹¤—L‚³‚ê‚½data.txt‚ð‘I‘ð‚µ‚Ü‚·B
-‘I‘ð‚·‚é‚ÆAƒŒƒrƒ…[Œ‹‰Ê‚ª•\Ž¦‚³‚ê‚Ü‚·‚Ì‚ÅAŠm”F‚µ‚Ü‚·B
-
-
+load.htmlã¨ã„ã†ãƒ•ã‚¡ã‚¤ãƒ«é–‹ãã¾ã™ã€‚
+load.htmlã®ä¸‹éƒ¨ã«ã‚ã‚‹ã€Œnoteã®ãƒ‡ãƒ¼ã‚¿ã‚’é¸æŠžã—ã¦ãã ã•ã„ã€‚ã€ã¨ã„ã†ã¨ã“ã‚ã§ã€
+å…±æœ‰ã•ã‚ŒãŸdata.txtã‚’é¸æŠžã—ã¾ã™ã€‚
+é¸æŠžã™ã‚‹ã¨ã€ãƒ¬ãƒ“ãƒ¥ãƒ¼çµæžœãŒè¡¨ç¤ºã•ã‚Œã¾ã™ã®ã§ã€ç¢ºèªã—ã¾ã™ã€‚
 
 
-ˆÈã‚Å‚·B
+
+
+ä»¥ä¸Šã§ã™ã€‚
 
